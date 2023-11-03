@@ -5,7 +5,7 @@
 # 385916 – счастливый, т.к. 3+8+5=9+1+6. Вам требуется написать
 # программу, которая проверяет счастливость билета
 
-n = 123456
+n = 385916
 
 number1 = n % 1000
 number2 = n // 1000
@@ -13,7 +13,7 @@ number2 = n // 1000
 res1 = 0
 
 while number1 > 0:
-    s = n % 10
+    s = number1 % 10
     res1 = res1 + s
     number1 = number1 // 10
 
@@ -23,6 +23,8 @@ while number2 > 0:
     s = number2 % 10
     res2 = res2 + s
     number2 = number2 // 10
+
+print(res1, res2)
 
 if res1 == res2:
     print("yes")

@@ -3,6 +3,13 @@
 # помощью рекурсии.
 # A = 3; B = 5 -> 243 (3⁵)
 # A = 2; B = 3 -> 8
+"""
+def f(a, b):
+  if b == 0:
+    return 1
+  return f(a, b - 1) * a
+"""
+
 numA = int(input())
 numB = int(input())
 
